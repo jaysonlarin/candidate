@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://my.talkpush.com/api/talkpush_services/campaign_invitations?api_key=48530ba23eef6b45ffbc95d7c20a60b9&api_secret=e2f724ba060f82ddf58923af494578a7&filter%5Bcampaign_id%5D=4274
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 12 May 2020 09:24:47 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      etag:
+      - W/"1c410791841549a5b721632cad5c8a79"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - talkpush=d077768b7342eb1ee2a378de873fa338; domain=.my.talkpush.com; path=/;
+        secure; HttpOnly
+      x-request-id:
+      - 93c8f25e-f26e-4b01-bb14-298e2af0f5e6
+      x-runtime:
+      - '0.243152'
+      vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":1,"current_page":1,"pages":1,"candidates":[{"state":"pending","campaign_id":4274,"campaign_ats_external_id":null,"id":944635,"candidate_id":15130,"first_name":"Ruel","last_name":"Nopal","campaign_title":"Ruby
+        on Rails Campaign Test","email":"rakethost@gmail.com","user_phone_number":"2345678911","school_name":null,"education":null,"gender":null,"source":null,"scheduled_at":null,"created_at":"2020-05-12T08:51:58.487+08:00","links":[],"employment":[],"others":{},"labels":[],"answers":[],"photo":{"url":"https://my.talkpush.com/images/profilepic.png"}}]}'
+    http_version: null
+  recorded_at: Tue, 12 May 2020 09:24:47 GMT
+recorded_with: VCR 5.1.0

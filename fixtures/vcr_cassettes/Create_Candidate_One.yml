@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/4274/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: '{"api_key":"48530ba23eef6b45ffbc95d7c20a60b9","api_secret":"e2f724ba060f82ddf58923af494578a7","campaign_invitation":{"first_name":"John","last_name":"Lennon","email":"jlennon@mail.com","user_phone_number":"123"}}'
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 12 May 2020 09:48:36 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      server:
+      - nginx
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      etag:
+      - W/"4619d7939cf7d2c65d810e28389ee4ab"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - e0bc3608-b554-4a9e-8afa-8ac0379e9336
+      x-runtime:
+      - '1.718147'
+      vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/944639/outbound_call?company_id=16\u0026outbound_token=46b70ef96d4b00c438c4886c18070193e186a82f1d2903965ec33e497b2eaaa1\u0026source=MICROSITE","pin":"206058","id":944639}'
+    http_version: null
+  recorded_at: Tue, 12 May 2020 09:48:36 GMT
+recorded_with: VCR 5.1.0
