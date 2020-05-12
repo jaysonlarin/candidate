@@ -16,7 +16,8 @@ describe GoogleSheetCandidate do
   describe '#get_candidates' do
     it 'returns candidates' do
       VCR.use_cassette('GoogleSheet Candidates', record: :once) do
-        candidates = GoogleSheetCandidate.new.get_candidates
+        service = GoogleSheetCandidate.new
+        candidates = service.get_candidates
 
         expect(candidates[0].size).to eq 5
         expect(candidates.class).to eq Array

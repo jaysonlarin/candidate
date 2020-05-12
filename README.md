@@ -18,7 +18,8 @@
 
 ### Retrieve google sheet candidates
 ```ruby
-  service = GoogleSheetCandidate.new.get_candidates
+  service = GoogleSheetCandidate.new
+  service.get_candidates
 ```
 
 ### Retrieve existing candidates
